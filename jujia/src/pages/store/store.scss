@@ -1,3 +1,71 @@
 page-store {
+    ion-navbar{
+        .searchbar-ios .searchbar-search-icon {
+          top: 12px;
+          left:32%;
+        }
+        .searchbar-md .searchbar-search-icon {
+            border-radius: 10px;
+          top: 14px;
+          left: 28%;
+        }
+        .searchbar-md .searchbar-input{
+            border-radius: 5px;
+            background-color: rgba(0,0,0,0.08);
+        }
+        input::-webkit-input-placeholder {
+          text-align: center;
+          padding-left:40px;
+        }
 
+    }
+    ion-content{
+        nav ul,li{
+            list-style: none;
+            padding:0px;
+            margin:0px;
+        }
+        nav ul li{
+            width: 20%;
+            height: 41px;
+            line-height: 41px;
+            text-align: center;
+            font-size: 15px;
+            float: left;
+            margin-top:-5px;
+        }
+        nav .first_li{
+            background-color: #ffdb2c;
+        }
+        .main{
+            clear: both;
+            p{
+                text-align: center;
+                height: 25px;
+                line-height: 25px;
+                position: relative;
+                img{
+                    width: 15px;
+                    height: 15px;
+                    position: absolute;
+                    top:5px;
+                    right: 18px;
+                }
+            }
+            .more {
+                position: relative;
+                height: 25px;
+                a {
+                    position: absolute;
+                    right:18px;
+                    display: block;
+                    font-size:13px;
+                    color: #9e9e9e;
+                    text-decoration: none;
+                    height: 16px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
 }

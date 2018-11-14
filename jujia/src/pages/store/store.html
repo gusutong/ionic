@@ -1,17 +1,64 @@
+
+<ion-header no-border>
+  <ion-navbar text-center>
+    <ion-searchbar placeholder="双12特惠好物超低价"></ion-searchbar>
+  </ion-navbar>
+</ion-header>
 <ion-content>
-  <div [ngSwitch]="store">
+  <header>
+    <ion-slides autoplay="300" class="sli" loop="true" pager="true">
+      <ion-slide>
+        <img src="../../assets/imgs/banner5.png">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/imgs/banner5.png">
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/imgs/banner5.png">
+      </ion-slide>
+    </ion-slides>
+  </header>
+  <nav>
+    <ul>
+      <li *ngFor="let item of arr;let id = index;" [class.first_li]="flag == id" (click)="change(id)">
+        {{item}}
+      </li>
+    </ul>
+  </nav>
+  <div [ngSwitch]="num">
+    <div class="main" *ngSwitchCase="0">
+      <p>-----&nbsp;&nbsp;&nbsp;&nbsp;沙发&nbsp;&nbsp;&nbsp;&nbsp;-----<img src="../../assets/imgs/store_choose.png"></p>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <img src="../../assets/imgs/store_living_1.png" alt="">
+          </ion-col>
+          <ion-col col-6>
+            <img src="../../assets/imgs/store_living_2.png" alt="">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-6>
+            <img src="../../assets/imgs/store_living_3.png" alt="">
+          </ion-col>
+          <ion-col col-6>
+            <img src="../../assets/imgs/store_living_4.png" alt="">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <div class="more"><a href="#">查看全部商品 >></a></div>
+    </div>
     <div *ngSwitchCase="1">
-      <ion-slides autoplay="300" class="sli" loop="true" pager="true">
-          <ion-slide>
-            <img src="../../assets/imgs/banner5.png">
-          </ion-slide>
-          <ion-slide>
-            <img src="../../assets/imgs/banner5.png">
-          </ion-slide>
-          <ion-slide>
-            <img src="../../assets/imgs/banner5.png">
-          </ion-slide>
-      </ion-slides>
+      卧室
+    </div>
+    <div *ngSwitchCase="2">
+      餐厅
+    </div>
+    <div *ngSwitchCase="3">
+      书房
+    </div>
+    <div *ngSwitchCase="4">
+      门厅
     </div>
   </div>
 </ion-content>

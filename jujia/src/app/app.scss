@@ -1,3 +1,51 @@
+// http://ionicframework.com/docs/theming/
+
+@font-face {
+  font-family: 'Ionicons';
+  src: url('../assets/fonts/iconfont.eot');
+  src: url('../assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/iconfont.woff') format('woff'),
+    url('../assets/fonts/iconfont.ttf') format('truetype'),
+    url('../assets/fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "Ionicons" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ion-ios-huancun:before,
+.ion-md-huancun:before {
+  content: "\e802";
+}
+
+.ion-ios-huancun -outline:before,
+.ion-md-huancun -outline:before {
+  content: "\e802";
+}
+
+.ion-ios-aboutus:before,
+.ion-md-aboutus:before {
+  content: "\e627";
+}
+
+.ion-ios-aboutus -outline:before,
+.ion-md-aboutus -outline:before {
+  content: "\e627";
+}
+
+.ion-ios-version:before,
+.ion-md-version:before {
+  content: "\e63e";
+}
+
+.ion-ios-version -outline:before,
+.ion-md-version -outline:before {
+  content: "\e63e";
+}
 
 // App Global Sass
 // --------------------------------------------------
@@ -29,6 +77,7 @@ li {
 .tabs-md .tab-button[aria-selected=true],
 .tabs-md .tab-button[aria-selected=true] .tab-button-icon{
   color: #ffdb2c;
+  margin-top:1px;
 }
 .ion-ios-add-circle,
 .ion-ios-add-circle-outline {
@@ -43,9 +92,10 @@ li {
 .ion-ios-add-circle-outline:before {
   color: #ffdb2c;
   font-size: 45px;
-  margin-top: -5px;
+  margin-top: 1px;
 }
 
 .ion-md-add-circle:before {
   font-size: 45px;
+  margin-top: 5px;
 }

@@ -7,7 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { APage } from '../pages/a/a';
+import { MysetPage } from '../pages/myset/myset';
 import { RegisterPage } from '../pages/register/register';
 import { InspirationPage } from '../pages/inspiration/inspiration';
 import { StorePage } from '../pages/store/store';
@@ -23,10 +23,10 @@ import { HttpClientModule } from '@angular/common/http';
     ContactPage,
     HomePage,
     TabsPage,
-    APage,
     RegisterPage,
     InspirationPage,
-    StorePage
+    StorePage,
+    MysetPage
   ],
   imports: [
     BrowserModule,
@@ -40,10 +40,10 @@ import { HttpClientModule } from '@angular/common/http';
     ContactPage,
     HomePage,
     TabsPage,
-    APage,
     RegisterPage,
     InspirationPage,
-    StorePage
+    StorePage,
+    MysetPage
   ],
   providers: [
     StatusBar,

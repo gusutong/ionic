@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
+import { ModalController } from 'ionic-angular';
 
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
-import { APage } from '../a/a';
 import { RegisterPage } from '../register/register';
 import { InspirationPage } from '../inspiration/inspiration';
 import { StorePage } from '../store/store';
@@ -20,7 +20,13 @@ export class TabsPage {
   tab5Root = AboutPage;
 
 
-  constructor() {
+  constructor(public modalCtrl: ModalController) {
 
+  }
+  ionViewDidLoad(){
+    document.querySelector('#tab-t0-2').addEventListener('click',()=>{
+      let profileModal = this.modalCtrl.create(ContactPage);
+      profileModal.present();
+    },false);
   }
 }
