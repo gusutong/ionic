@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { LoginPage } from './login';
 import { TabsPage } from "../tabs/tabs";
-import { ZhucePage } from "../zhuce/zhuce"
+import { ZhucePage } from "../zhuce/zhuce";
+import { SetPwdPage } from '../set-pwd/set-pwd';
 @NgModule({
   declarations: [
     LoginPage,
     TabsPage,
-    ZhucePage
+    ZhucePage,
+    SetPwdPage
   ],
   imports: [
     IonicPageModule.forChild(LoginPage),
@@ -15,7 +17,8 @@ import { ZhucePage } from "../zhuce/zhuce"
   entryComponents: [
     LoginPage,
     TabsPage,
-    ZhucePage
+    ZhucePage,
+    SetPwdPage
   ],
 })
 export class LoginPageModule {}

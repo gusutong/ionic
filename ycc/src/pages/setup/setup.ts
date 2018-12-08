@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ResetPwdPage } from '../reset-pwd/reset-pwd';
 
 /**
  * Generated class for the SetupPage page.
@@ -17,7 +18,9 @@ export class SetupPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  resetpwd(){
+    this.navCtrl.push(ResetPwdPage);
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad SetupPage');
   }

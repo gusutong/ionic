@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoginPage } from '../login/login';
+import { XieyiPage }from '../xieyi/xieyi';
 /**
  * Generated class for the ZhucePage page.
  *
@@ -21,8 +22,10 @@ export class ZhucePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ZhucePage');
   }
-  denglu(){
+  logIn(){
     this.navCtrl.push(LoginPage);
   }
-
+  xieyi(){
+    this.navCtrl.push(XieyiPage);
+  }
 }

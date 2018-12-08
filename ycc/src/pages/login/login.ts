@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from "../tabs/tabs";
 import { ZhucePage } from "../zhuce/zhuce";
+import { SetPwdPage } from '../set-pwd/set-pwd';
+import { TouxiangPage } from '../touxiang/touxiang';
 /**
  * Generated class for the LoginPage page.
  *
@@ -24,10 +26,13 @@ export class LoginPage {
   }
 
   logIn( ) {
-    this.navCtrl.push(TabsPage);
+    this.navCtrl.push(TouxiangPage);
   }
 
   zhuce(){
     this.navCtrl.push(ZhucePage);
+  }
+  set(){
+    this.navCtrl.push(SetPwdPage);
   }
 }

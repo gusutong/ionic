@@ -11,6 +11,7 @@ import { FansPage } from '../fans/fans';
 import { HomepagePage } from '../homepage/homepage';
 import { EditPage } from '../edit/edit';
 import { IonicPage, NavController, NavParams} from 'ionic-angular';
+import { App } from 'ionic-angular';
 // import { ModalPage } from './ModalPage';
 /**
  * Generated class for the MyPage page.
@@ -26,40 +27,40 @@ import { IonicPage, NavController, NavParams} from 'ionic-angular';
 })
 export class MyPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private app:App) {
   }
   account(){
-    this.navCtrl.push(AccountPage);
+    this.app.getRootNav().push(AccountPage);
   }
   album(){
-    this.navCtrl.push(AlbumPage);
+    this.app.getRootNav().push(AlbumPage);
   }
   video(){
-    this.navCtrl.push(VideoPage);
+    this.app.getRootNav().push(VideoPage);
   }
   feedback(){
-    this.navCtrl.push(FeedbackPage);
+    this.app.getRootNav().push(FeedbackPage);
   }
   share(){
-    this.navCtrl.push(SharePage);
+    this.app.getRootNav().push(SharePage);
   }
   setup(){
-    this.navCtrl.push(SetupPage);
+    this.app.getRootNav().push(SetupPage);
   }
   creation(){
-    this.navCtrl.push(CreationPage);
+    this.app.getRootNav().push(CreationPage);
   }
   follow(){
-    this.navCtrl.push(FollowPage);
+    this.app.getRootNav().push(FollowPage);
   }
   fans(){
-    this.navCtrl.push(FansPage);
+    this.app.getRootNav().push(FansPage);
   }
   homepage(){
-    this.navCtrl.push(HomepagePage);
+    this.app.getRootNav().push(HomepagePage);
   }
   edit(){
-    this.navCtrl.push(EditPage);
+    this.app.getRootNav().push(EditPage);
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad MyPage');

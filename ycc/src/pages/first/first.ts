@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { LoginPage } from '../login/login';
 /**
  * Generated class for the FirstPage page.
  *
@@ -16,10 +16,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class FirstPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+   
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad FirstPage');
+  next(){
+    this.navCtrl.push(LoginPage);
   }
-
+  
 }
