@@ -51,7 +51,7 @@ import { HttpModule }from '@angular/http';
 @NgModule({
   declarations: [
     MyApp,
-    
+    ContactPage,
    
     AboutPage,
     ContactPage,
@@ -87,7 +87,7 @@ import { HttpModule }from '@angular/http';
     VidioPage,
     ArticlePage,
     CommunityPage,
-    MessagePage
+    MessagePage,
   ],
   imports: [
     BrowserModule,
@@ -140,7 +140,7 @@ import { HttpModule }from '@angular/http';
     VidioPage,
     ArticlePage,
     CommunityPage,
-    MessagePage
+    MessagePage,
   ],
   providers: [
     StatusBar,

@@ -39,7 +39,7 @@ export class ApiProvider {
   public getMy(){
     return new Promise((resolve, reject) => {
       
-      this.http.get(this.url+'user/2')
+      this.http.get(this.url+'user/1')
         .subscribe((res:Response)=>{
           resolve(res.json())
         },err=>{

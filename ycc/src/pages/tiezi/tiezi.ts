@@ -36,7 +36,7 @@ interface  ArticleComment{
 export class TieziPage {
 
   isCheck=0;
-  arr=[1,2,3,4];
+  arr=[1];
   id;
   constructor(public navCtrl: NavController, public navParams: NavParams, public api:ApiProvider) {
     this.id=navParams.get('id');
@@ -45,7 +45,7 @@ export class TieziPage {
   }
   list:Array<Tiezi>=[];
 
-
+  content;
   getList(){
     //获取list用于显示
     this.api.getList_next(this.id).then(data=>{
@@ -53,7 +53,8 @@ export class TieziPage {
       console.dir(data);
       this.list=<any>data;
       console.dir(this.list);
-
+      this.content=this.list[0].acontent.split('|').join("\n");
+      console.log(this.content);
     });
     
   }

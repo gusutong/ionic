@@ -1,7 +1,7 @@
 <ion-content>
     <div class="al">
         <div class="img">
-          <img id="img" src="{{'http://192.168.140.144:8080/content/'+list[0]?.aimage}}">
+          <img id="img" src="{{'http://192.168.92.144:8080/content/'+list[0]?.aimage}}">
           <i class="iconfont icon-2fanhui" color="primary" (click)="last()"></i>
           <i class="iconfont icon-fenxiang" color="primary" (click)="fenxiang()"></i>
         </div>
@@ -10,7 +10,7 @@
             <li class="atitle">{{list[0]?.atitle}}</li>
             <li>{{list[0]?.uname}}</li>
             <li class="atime">{{list[0]?.atime}}</li>
-            <li id="neirong">{{list[0]?.acontent}}</li>
+            <li id="neirong"><pre>{{content}}</pre></li>
           </ul>
         </div>
         <div class="bottom">

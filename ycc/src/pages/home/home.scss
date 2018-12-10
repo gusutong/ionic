@@ -26,9 +26,8 @@ page-home {
     }
     .tiezi{
         margin: 0px;
-             padding: 0px;
-        
-         li{
+        padding: 0px;
+        li{
              background-color: rgb(250, 248, 248);
              border-bottom: solid 1px rgb(235, 213, 213);
              margin-bottom: 5px;
@@ -50,6 +49,7 @@ page-home {
                        #title{
                            height: 50px;
                            margin-top: 15px;
+                           margin-left: 5px;
                            margin-bottom: 20px;
                            font-size: 18px;
                            font-weight: 500;
@@ -88,8 +88,7 @@ page-home {
                         width: 100%;
                        }
                    }
-              }
-           
+              }           
         }
     }
     .sli{
