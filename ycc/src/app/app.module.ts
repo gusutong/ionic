@@ -47,7 +47,8 @@ import { ArticlePage } from '../pages/article/article';
 import { MessagePage } from '../pages/message/message';
 import { ApiProvider } from '../providers/api/api';
 import { HttpModule }from '@angular/http';
-import { PhotoPage } from '../pages/photo/photo';
+import { StorageProvider } from '../providers/storage/storage';
+import { SeetouxiangPage } from '../pages/seetouxiang/seetouxiang';
 
 @NgModule({
   declarations: [
@@ -88,8 +89,8 @@ import { PhotoPage } from '../pages/photo/photo';
     VidioPage,
     ArticlePage,
     CommunityPage,
+    SeetouxiangPage,
     MessagePage,
-    PhotoPage,
   ],
   imports: [
     BrowserModule,
@@ -142,14 +143,15 @@ import { PhotoPage } from '../pages/photo/photo';
     VidioPage,
     ArticlePage,
     CommunityPage,
+    SeetouxiangPage,
     MessagePage,
-    PhotoPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider,
+    StorageProvider,
   ]
 })
 export class AppModule {}

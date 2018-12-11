@@ -8,7 +8,7 @@
  
    <div class="out"  *ngFor='let item of list;let idx=index'>
      <div class="inside1" (click)='goHomeage()'>
-          <div class="com1" ><img class="img1" src="{{'http://192.168.92.144:8080/user/'+item?.uimage}}" alt="" style="width:60px;
+          <div class="com1" ><img class="img1" src="{{'http://192.168.140.144:8080/user/'+item?.uimage}}" alt="" style="width:60px;
             height: 50px; border-radius: 50%;">
             </div> <!-- img-->
          <div class="com2">
@@ -18,7 +18,7 @@
      </div>
      <div class="inside2" (click)='goContent()'>
          <div class="com3">{{item?.scontent}}</div>
-         <div class="com4"><img id="img" src="{{'http://192.168.92.144:8080/say/'+item?.simage}}" ></div>
+         <div class="com4"><img id="img" src="{{'http://192.168.140.144:8080/say/'+item?.simage}}" ></div>
      </div>
      <div class="inside3">
          <div class="com5"><a><ion-icon name="ios-heart-outline"></ion-icon></a><span>赞同</span></div>
