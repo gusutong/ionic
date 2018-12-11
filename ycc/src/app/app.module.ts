@@ -47,6 +47,7 @@ import { ArticlePage } from '../pages/article/article';
 import { MessagePage } from '../pages/message/message';
 import { ApiProvider } from '../providers/api/api';
 import { HttpModule }from '@angular/http';
+import { PhotoPage } from '../pages/photo/photo';
 
 @NgModule({
   declarations: [
@@ -88,6 +89,7 @@ import { HttpModule }from '@angular/http';
     ArticlePage,
     CommunityPage,
     MessagePage,
+    PhotoPage,
   ],
   imports: [
     BrowserModule,
@@ -141,6 +143,7 @@ import { HttpModule }from '@angular/http';
     ArticlePage,
     CommunityPage,
     MessagePage,
+    PhotoPage,
   ],
   providers: [
     StatusBar,

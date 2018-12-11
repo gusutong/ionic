@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PhotoPage } from '../photo/photo';
+
 /**
- * Generated class for the AlbumPage page.
+ * Generated class for the PhotoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,18 +10,16 @@ import { PhotoPage } from '../photo/photo';
 
 @IonicPage()
 @Component({
-  selector: 'page-album',
-  templateUrl: 'album.html',
+  selector: 'page-photo',
+  templateUrl: 'photo.html',
 })
-export class AlbumPage {
+export class PhotoPage {
   arr=[1,2,3,4,5];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  photo(){
-    this.navCtrl.push(PhotoPage);
-  }
+
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AlbumPage');
+    console.log('ionViewDidLoad PhotoPage');
   }
 
 }
