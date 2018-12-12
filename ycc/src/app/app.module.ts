@@ -22,6 +22,7 @@ import { XingquPage } from '../pages/xingqu/xingqu';
 import { TieziPageModule } from '../pages/tiezi/tiezi.module';
 
 import { ShequPage } from '../pages/shequ/shequ';
+import { AboutusPage } from '../pages/aboutus/aboutus';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TieziPage } from '../pages/tiezi/tiezi';
@@ -49,6 +50,9 @@ import { ApiProvider } from '../providers/api/api';
 import { HttpModule }from '@angular/http';
 import { StorageProvider } from '../providers/storage/storage';
 import { SeetouxiangPage } from '../pages/seetouxiang/seetouxiang';
+import { PhotoPage } from '../pages/photo/photo';
+import { TransmitPage } from '../pages/transmit/transmit';
+
 
 @NgModule({
   declarations: [
@@ -58,6 +62,7 @@ import { SeetouxiangPage } from '../pages/seetouxiang/seetouxiang';
     AboutPage,
     ContactPage,
     HomePage,
+    TransmitPage,
     TabsPage,
     MyPage,
     ShequPage,
@@ -91,6 +96,8 @@ import { SeetouxiangPage } from '../pages/seetouxiang/seetouxiang';
     CommunityPage,
     SeetouxiangPage,
     MessagePage,
+    PhotoPage,
+    AboutusPage,
   ],
   imports: [
     BrowserModule,
@@ -117,6 +124,7 @@ import { SeetouxiangPage } from '../pages/seetouxiang/seetouxiang';
     ShequPage,
     LoginPage,
     ZhucePage ,
+    TransmitPage,
     FirstPage,
     SetPwdPage,
     ResetPwdPage,
@@ -145,6 +153,8 @@ import { SeetouxiangPage } from '../pages/seetouxiang/seetouxiang';
     CommunityPage,
     SeetouxiangPage,
     MessagePage,
+    PhotoPage,
+    AboutusPage,
   ],
   providers: [
     StatusBar,

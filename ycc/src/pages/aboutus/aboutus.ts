@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ShequPage } from '../shequ/shequ';
 
 /**
- * Generated class for the ArticlePage page.
+ * Generated class for the AboutusPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,18 +10,16 @@ import { ShequPage } from '../shequ/shequ';
 
 @IonicPage()
 @Component({
-  selector: 'page-article',
-  templateUrl: 'article.html',
+  selector: 'page-aboutus',
+  templateUrl: 'aboutus.html',
 })
-export class ArticlePage {
+export class AboutusPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  openModal(){
-    this.navCtrl.push(ShequPage)
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad AboutusPage');
   }
-  goCamera(){
-    
-  }
+
 }
