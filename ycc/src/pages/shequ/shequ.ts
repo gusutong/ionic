@@ -63,7 +63,7 @@ export class ShequPage {
   goShare(){
     this.navCtrl.push(SharePage);
   }
-  goHomeage(){
+  goHomepage(){
     this.navCtrl.push(HomepagePage);
   }
   goContent(){
@@ -72,5 +72,5 @@ export class ShequPage {
   goTransmit(){
     this.navCtrl.push(TransmitPage);
   }
-
+  changeCol
 }
